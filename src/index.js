@@ -20,7 +20,9 @@ let
   }
 
 app.commandLine.appendSwitch('ignore-certificate-errors');
-app.dock.setIcon(iconPath);
+
+if (process.platform == 'darwin')
+  app.dock.setIcon(iconPath);
 
 const init = () => {
   notify = {
@@ -158,7 +160,9 @@ const init = () => {
   ));
 
   nativeTheme.on('updated', () => {
-    app.dock.setIcon(iconPath);
+    if (process.platform == 'darwin')
+      app.dock.setIcon(iconPath);
+
     mainWindow.setBackgroundColor(nativeTheme.shouldUseDarkColors
       ? darkBackgroundColor
       : lightBackgroundColor);
