@@ -1,6 +1,6 @@
 {
   "name": "scs",
-  "productName": "SCS.Vision",
+  "productName": "Vision",
   "version": "1.0.0",
   "description": "Simple configuration start",
   "main": "src/index.js",
