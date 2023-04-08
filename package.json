@@ -2,7 +2,7 @@
   "name": "vision",
   "productName": "Vision",
   "version": "1.0.0",
-  "description": "Simple configuration start",
+  "description": "Simple browser for configuration",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
