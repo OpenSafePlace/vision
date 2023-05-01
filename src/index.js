@@ -4,7 +4,7 @@ const
   isMac = process.platform === 'darwin',
   darkBackgroundColor = '#3c3c3c',
   lightBackgroundColor = '#ffffff',
-  iconPath = __dirname + '/source/images/icons/scs.png';
+  iconPath = __dirname + '/source/images/icons/main.png';
 
 let
   notify = {
